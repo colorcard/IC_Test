@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>晶圆缺陷检测系统 Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>晶圆缺陷检测系统 Demo</h1>
+    </header>
+    <main>
+      <section id="uploadSection">
+        <h2>上传晶圆图片</h2>
+        <input type="file" id="waferImageInput" accept="image/*">
+        <button id="detectBtn">开始检测</button>
+      </section>
+      <section id="displaySection">
+        <h2>晶圆图显示</h2>
+        <canvas id="waferCanvas"></canvas>
+      </section>
+      <section id="resultSection">
+        <h2>检测结果</h2>
+        <ul id="defectList"></ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 晶圆缺陷检测系统 | 湘潭大学</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

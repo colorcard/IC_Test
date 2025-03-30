@@ -1,0 +1,107 @@
+/* 重置与基本样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f7f9;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* 页面总体布局 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 头部样式 */
+header {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #4CAF50;
+}
+
+/* 主体区域布局，支持响应式 */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 各区域样式 */
+section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 1.2em;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+/* 上传区域控制 */
+#waferImageInput {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* canvas 样式 */
+#waferCanvas {
+  display: block;
+  max-width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* 检测结果列表 */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+ul li {
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* 底部样式 */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.9em;
+  color: #888;
+}
